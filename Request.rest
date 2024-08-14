@@ -1,0 +1,46 @@
+GET http://localhost:3003/ping
+###
+
+GET http://localhost:3003/bands
+###
+
+POST http://localhost:3003/bands
+Content-Type: application/json
+
+{
+    "id": "b006",
+    "name": "Fun"
+}
+###
+
+PUT http://localhost:3003/bands/b007
+Content-Type: application/json
+
+{
+    "id": "b006"
+}
+###
+
+DELETE http://localhost:3003/bands/b006
+###
+
+GET http://localhost:3003/songs
+###
+
+POST http://localhost:3003/songs
+Content-Type: application/json
+
+{
+    "id": "s006",
+    "name": "Bad Liar",
+    "bandId": "b004"
+}
+###
+
+PUT http://localhost:3003/songs/s006
+Content-Type: application/json
+
+{
+    
+}
+###
